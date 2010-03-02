@@ -11,7 +11,7 @@
 # FOR A PARTICULAR PURPOSE.
 #
 ##############################################################################
-"""Setup for zojax.jquery.json package
+"""Setup for zojax.jquery.modal package
 
 $Id$
 """
@@ -24,9 +24,9 @@ def read(*rnames):
 version='0'
 
 
-setup(name='zojax.jquery.json',
+setup(name='zojax.jquery.modal',
       version=version,
-      description="JQuery json Plugin",
+      description="JQuery modal Plugin",
       long_description=(
           'Detailed Documentation\n' +
           '======================\n'
@@ -48,7 +48,7 @@ setup(name='zojax.jquery.json',
       install_requires = ['setuptools',
                           'zojax.resource',
                           'zojax.resourcepackage',
-                          'zojax.js.jquery',
+                          'zojax.jquery.ui',
                           ],
       include_package_data = True,
       zip_safe = False

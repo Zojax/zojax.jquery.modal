@@ -1,0 +1,30 @@
+<configure
+   xmlns="http://namespaces.zope.org/zope"
+   xmlns:zojax="http://namespaces.zope.org/zojax">
+
+  <!-- resources -->
+  <zojax:resourcedirectory
+     name="jquery-modal"
+     directory="resources"
+     mapping=".css:zrt" />
+
+  <zojax:resourceinclude
+     name="jquery.simplemodal.js"
+     library="jquery-plugins" require="jquery"
+     type="javascript" path="jquery-modal/jquery.simplemodal.js"
+     compress="yes" />
+     
+  <zojax:resourceinclude
+     name="jquery.framemodal.js"
+     library="jquery-plugins" require="jquery"
+     type="javascript" path="jquery-modal/jquery.framedialog.js"
+     compress="yes" />
+       
+  <zojax:resourceinclude
+     name="jquery.modal.modalform.js"
+     library="jquery-plugins" require="jquery"
+     type="javascript" path="jquery-modal/modalform.js"
+     compress="yes"
+     />
+
+</configure>
