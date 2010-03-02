@@ -10,6 +10,7 @@ $.fn.modalform = function(options) {
         formURL: "",
         formId: "",
         buttonId: "",
+        title: "",
         overlayId: 'contact-overlay',
         containerId: 'contact-container',
     }, options);
@@ -21,7 +22,7 @@ $.fn.modalform = function(options) {
         closeOnEscape: true,
         minWidth:800,
         minHeight:600,
-        title: 'test title'
+        title: options.title,
     });
     frame.find('iframe').attr('scrolling', 'no');
     return frame
