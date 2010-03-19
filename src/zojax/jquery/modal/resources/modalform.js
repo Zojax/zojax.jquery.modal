@@ -12,7 +12,7 @@ $.fn.modalform = function(options) {
         buttonId: "",
         title: "",
         overlayId: 'contact-overlay',
-        containerId: 'contact-container',
+        containerId: 'contact-container'
     }, options);
     
     var frame = jQuery.FrameDialog
@@ -22,7 +22,7 @@ $.fn.modalform = function(options) {
         closeOnEscape: true,
         minWidth:800,
         minHeight:600,
-        title: options.title,
+        title: options.title
     });
     frame.find('iframe').attr('scrolling', 'no');
     return frame
